@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #elemntdiv {
+        background-color: red;
+        width: 30vw;
+    }
+
+    #changecolordiv {
+        width: 50vw;
+        height: 50vh;
+        background-color: aqua;
+    }
+
+    #divuser {
+        height: 0;
+        width: 0;
+        background-color: black;
+    }
+</style>
+
+<body onkeydown="stopuser(event)">
+    <button onclick="startPlay()" id="startanimtion">CLICK TO START</button>
+    <button onclick="stopPlay()" id="stoptanimtion">CLICK TO STOP</button>
+    <div id="elemntdiv"></div>
+
+
+    <button onclick="changeColor ()" id="btn_change" >CLICK TO CHANGE COLOR</button>
+    <div id="changecolordiv"></div>
+
+    <button onclick="getFromUserHandW()" id="btn_input">START TO CHANGE</button>
+    ENTER HEIGHT:<input id="input_user_heigt" type="number">
+    ENTER WIDTH: <input id="input_user_width" type="number">
+    <div id="divuser"></div>
+
+
+    ENTER NAME:<input type="text" id="user_name">
+    <button onclick="namefunc()">name</button>
+    <br>
+
+    ENETER COLOR:<input type="color" id="user_color">
+    <button onclick="userColorsInput()">color</button>
+    <br>
+
+    <button id="print" onclick="printnamecolor()">print name</button>
+    <br>
+    <button onclick="stopPrint()" stopPrint() id="stopprint">srop</button>
+
+    <h1 id="colors"> </h1>
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
